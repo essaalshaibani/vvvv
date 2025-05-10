@@ -1,0 +1,9 @@
+git init
+git config --global user.name "essa123t"
+git config --global user.email "rryyoo511@gmail.com"
+git remote add origin https://github.com/essa123t/testgit.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+git remote remove origin
+git remote add origin https://github.com/essa11t/essa.git
