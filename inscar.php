@@ -41,17 +41,7 @@
 <?php
 include 'conn.php';
 
-
-if(isset($_POST['submit'])){
-    $filelocation='img/';
-    $filename=time().'_'.basename($_FILES["myfile"]["name"]);
-    $file_path=$filelocation.$filename;
-    $name=$_POST['name'];
-    $color=$_POST['color'];
-    $cylinder=$_POST['cylinder'];
-    $name=$_POST['name'];
-    $cno=$_POST['cno'];
-    move_uploaded_file($_FILES["myfile"].["name"],$file_path);
+LES["myfile"].["name"],$file_path);
     $sql="insert into cars (name,color,cylinder,imge,cno) values ('$name','$color','$cylinder','$file_path','$cno')";
     
     if(mysqli_query($conn,$sql)){
